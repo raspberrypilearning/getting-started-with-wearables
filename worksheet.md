@@ -14,7 +14,7 @@ Firstly we will test whether we can upload a program successfully to the FLORA b
 
 1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the 'Serial Port' menu you will need to select the port. On Windows this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
 
-1.If you look closely at the FLORA board you will see a small LED labelled "D7". Type the following code into the Arduino IDE to program this LED to blink repeatedly:
+1. If you look closely at the FLORA board you will see a small LED labelled "D7". Type the following code into the Arduino IDE to program this LED to blink repeatedly:
 
   ```cpp
   int led = 7;
@@ -40,7 +40,7 @@ Firstly we will test whether we can upload a program successfully to the FLORA b
 1. Now click on the arrow symbol which is next to the tick symbol you pressed earlier. This will **upload** your code to the FLORA. When the code has finished uploading, you should see the red LED blinking if your code has been successfully uploaded.
 
 ## Testing the circuit
-Before sewing anything, it is a good idea to test circuits with crocodile clips to check that the FLORA and the NeoPixel are working correctly and can be programmed. For this you will need:
+Before sewing anything, it is a good idea to test the circuit with crocodile clips to check that the FLORA and the NeoPixel are working correctly and can be programmed. For this you will need:
 
 - a FLORA board
 - a NeoPixel
@@ -66,9 +66,11 @@ We have chosen to use red, yellow and black crocodile clips for clarity, but the
 
 1. Once all of the crocodile clips are in place, connect your FLORA to the computer using the USB cable.
 
-1. In the Arduino IDE, select `File > New` to create a new program  (called a 'sketch').
+## Controlling the NeoPixel with code
 
-1. We are going to write some code to control the NeoPixel. This is slightly more complicated than controlling the on board LED because we need to use the NeoPixel library to communicate with the NeoPixel itself as it can do many more things than a normal LED.
+We are going to write some code to control the NeoPixel. This is slightly more complicated than controlling the on board LED because we need to use the NeoPixel library to communicate with the NeoPixel itself as it can do many more things than a normal LED.
+
+1. In the Arduino IDE, select `File > New` to create a new program  (called a 'sketch').
 
 1. Keep the code that is automatically inserted and add this line of code at the very start of your sketch. This will import the Adafruit NeoPixel library:
 
@@ -76,7 +78,7 @@ We have chosen to use red, yellow and black crocodile clips for clarity, but the
   #include <Adafruit_NeoPixel.h>
   ```
 
-1. Next we will set up the NeoPixel object. Add the following two lines of code after your `#include` statement
+1. Next we will set up the NeoPixel object. Add the following two lines of code straight after your `#include` statement
   ```cpp
   int pin = 6;
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, pin, NEO_GRB + NEO_KHZ800);
@@ -84,8 +86,8 @@ We have chosen to use red, yellow and black crocodile clips for clarity, but the
   The first line specifies the pin which the NeoPixel is connected to. Remember when we put the crocodile clip on pin D6 earlier - we can refer to this pin as just pin `6` in the program. Other pins can be referred to by number in the same way.
 
   The second line sets up a "strip" of NeoPixels, with some setup information:
-  - `1` - the number of NeoPixels we are controlling. Only one now, but if you add more you can increase this number.
-  - `pin` - the pin number the NeoPixels are connected to (we just set this up)
+  - `1` - how many NeoPixels we are controlling. Only one in this project, but if you make a project with more NeoPixels, increase this number.
+  - `pin` - the pin number the NeoPixels are connected to (from the variable we just set up)
   - `NEO_GRB + NEO_KHZ800` - this is config information for the NeoPixel RGB v2 we are using. You may need to change these values if you are using different versions of the NeoPixel.
 
 1. Now find the **setup** method which was created for you when you opened a new sketch. Change the code so that it looks like this:
@@ -99,7 +101,7 @@ We have chosen to use red, yellow and black crocodile clips for clarity, but the
 
   The `begin()` method allows us to start talking to the NeoPixel and the `show()` method tells the NeoPixel to update its colour. Since we haven't yet told it to be any particular colour, it will show as blank or 'off'.
 
-1. Now the fun bit! Find the **loop** method which was also created for you in the blank sketch. Add the following code:
+1. Now to set the colour. Find the **loop** method which was also created for you in the blank sketch. Add the following code:
   ```cpp
   void loop() {
 
@@ -118,8 +120,12 @@ We have chosen to use red, yellow and black crocodile clips for clarity, but the
 
   This method is called `loop()` because the code inside it will run continuously on the FLORA. Here's what this code does:
 
-  - `strip.setPixelColor(0, 0,0,255);` - sets the pixel colour. The last three numbers are a RGB colour value, so `0, 0, 255` is blue. There are lots of websites (e.g. [Adobe Color Wheel](https://color.adobe.com)) where you can find out the RGB values of particular colours.  The first number is which NeoPixel's colour to set. Since we only have one NeoPixel here, it is pixel `0`.
-  - `strip.show()` - update the colours displayed
+  - `strip.setPixelColor(0, 0,0,255);` - sets the pixel colour. The first number is which NeoPixel to set to this colour. Since we only have one NeoPixel in this project, it is pixel `0`. The last three numbers are a RGB colour value, so `0, 0, 255` is blue. There are lots of websites (e.g. [Adobe Color Wheel](https://color.adobe.com)) where you can find out the RGB values of particular colours.  
+  - `strip.show()` - update the colour display
   - `delay(1000)` - wait for 1 second (1000 milliseconds)
 
-1. Click on the tick to compile the program, and if there are no errors, connect the USB cable then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash blue continuously.
+1. Click on the tick to compile the program, and if there are no errors, connect the USB cable then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue.
+
+  Can you change the colour and the speed at which the NeoPixel flashes?
+
+Now move on to [worksheet 2](worksheet2.md) to find out how to sew your FLORA circuit into an item of clothing.
