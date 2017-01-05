@@ -6,7 +6,7 @@
   img: camera
 - name: 3x Crocodile Clips
   img: crocodile-clips
-- name: 3v battery pack
+- name: Battery pack
   img: camera
 - name: Mini or Micro USB cable (depends on FLORA version)
   img: usb-microusb
