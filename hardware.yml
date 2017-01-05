@@ -1,0 +1,12 @@
+- name: Adafruit FLORA board
+  img: camera
+- name: Adafruit NeoPixel
+  img: camera
+- name: Conductive thread
+  img: camera
+- name: 3x Crocodile Clips
+  img: crocodile-clips
+- name: 3v battery pack
+  img: camera
+- name: Mini or Micro USB cable (depends on FLORA version)
+  img: usb-microusb
