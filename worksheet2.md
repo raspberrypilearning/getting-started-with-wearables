@@ -1,47 +1,11 @@
-# Resource Name
+# Getting started with wearables (Part 2)
 
-Short description of the resource
+## Sewing the circuit
 
-## The First Step
+Now it's time to sew your FLORA and NeoPixel onto an item of clothing to make it wearable. You can sew it to anything at all from t-shirts to shoes, or even your bag! Before you sew, it is important to think about where you will position the components and where you will store your battery pack.
 
-First we'll do X.
+![Green jacket](images/jacket.png)
 
-1. First do A
+I chose this jacket because it has a pocket where I can store the battery pack, and a lapel for me to sew the NeoPixel onto. Some of the thread can be hidden by stitching under the lapel.
 
-1. Then do B
-
-1. Now do C in code:
-
-    ```python
-    print("Hello world")
-    ```
-
-    In Python the `print` function is something
-
-1. Now do D
-
-1. Now do X
-
-Now we have X
-
-## The Next Step
-
-Now we've done X, we'll do Y.
-
-1. First do A
-
-1. Then do B
-
-1. Now do C in code:
-
-    ```python
-    print("Hello world")
-    ```
-
-    In Python the `print` function is something
-
-1. Now do D
-
-1. Now do Y
-
-Now we have X and Y
+![Green jacket](images/positioning.png)
