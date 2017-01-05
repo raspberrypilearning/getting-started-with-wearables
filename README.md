@@ -1,8 +1,8 @@
-# Example Resource
+# Getting started with wearables
 
 ![](cover.png)
 
-In this resource you will learn how to create a basic piece of wearable technology using an Adafruit FLORA and a NeoPixel.
+In this resource you will learn how to create a basic piece of wearable technology using an Adafruit FLORA and a NeoPixel LED.
 
 ## Licence
 
