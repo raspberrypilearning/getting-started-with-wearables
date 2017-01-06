@@ -12,7 +12,7 @@ Firstly we will test whether we can upload a program successfully to the FLORA b
 
 1. Connect your FLORA board to the computer via the USB cable.
 
-1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the 'Serial Port' menu you will need to select the port. On Windows this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
+1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the same menu, look for the 'Serial Port' option and select the port. On Windows this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
 
   ![Select the FLORA board](images/select-flora-board.png)
 
@@ -33,13 +33,13 @@ Firstly we will test whether we can upload a program successfully to the FLORA b
   }
   ```
 
-1. Click on the tick symbol in the top left of the window. This will **compile** your code, which includes checking it for errors. Any errors which you need to correct will appear at the bottom, and the line will often be highlighted in the code to help you.
+1. Click on the tick symbol in the top left of the window. This will **compile** your code, which includes checking it for errors. Any errors which you need to correct will appear at the bottom, and the line will often be highlighted in the code to help you. In the example below we have forgotten the capital 'M' in `pinMode` which has caused an error.
 
   ![Check for errors](images/compile-program.png)
 
-1. If there were any errors, fix them and press the tick button again until you see "Done compiling" in green at the bottom and no error messages displayed.
+1. If there were any errors, fix them and press the tick button again. Repeat this until you see "Done compiling" in green at the bottom and no error messages displayed.
 
-1. Now click on the arrow symbol which is next to the tick symbol you pressed earlier. This will **upload** your code to the FLORA. When the code has finished uploading, you should see the red LED blinking if your code has been successfully uploaded.
+1. Now click on the arrow symbol which is next to the tick symbol you pressed earlier. This will **upload** your code to the FLORA. The LEDs will blink whilst the code uploads, and When the code has finished uploading you should see the red LED constantly blinking.
 
 ## Testing the circuit
 Before sewing anything, it is a good idea to test the circuit with crocodile clips to check that the FLORA and the NeoPixel are working correctly and can be programmed. For this you will need:
@@ -85,12 +85,12 @@ We are going to write some code to control the NeoPixel. This is slightly more c
   int pin = 6;
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, pin, NEO_GRB + NEO_KHZ800);
   ```
-  The first line specifies the pin which the NeoPixel is connected to. Remember when we put the crocodile clip on pin D6 earlier - we can refer to this pin as just pin `6` in the program. Other pins can be referred to by number in the same way.
+  The first line specifies the pin which the NeoPixel is connected to. Remember when we put the crocodile clip on pin D6 earlier? We can refer to this pin just by the number `6` in the program. Other pins can be referred to by number in the same way.
 
   The second line sets up a "strip" of NeoPixels, with some setup information:
   - `1` - how many NeoPixels we are controlling. Only one in this project, but if you make a project with more NeoPixels, increase this number.
-  - `pin` - the pin number the NeoPixels are connected to (from the variable we just set up)
-  - `NEO_GRB + NEO_KHZ800` - this is config information for the NeoPixel RGB v2 we are using. You may need to change these values if you are using different versions of the NeoPixel.
+  - `pin` - the pin number the NeoPixels are connected to (from the variable `pin` we just set up)
+  - `NEO_GRB + NEO_KHZ800` - this is config information for the NeoPixel RGB v2 we are using. You may need to change these values if you are using different versions of the NeoPixel. More information on other settings is available on the [Adafruit website](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library).
 
 1. Now find the **setup** method which was created for you when you opened a new sketch. Change the code so that it looks like this:
 

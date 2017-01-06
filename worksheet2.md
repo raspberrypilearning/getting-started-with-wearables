@@ -20,7 +20,7 @@ You will also need an item of clothing of your choice.
 
 ![Green jacket](images/jacket.png)
 
-## Sewing the ground circuit
+## Sewing the ground connection
 
 1. First, plan out where your components will go. I chose this jacket because it has a pocket where I can store the battery pack, and a lapel for me to sew the NeoPixel onto. Most of the thread circuit can also be hidden by stitching under the lapel.
 
@@ -73,9 +73,10 @@ You will also need an item of clothing of your choice.
 
    ![On switch on the FLORA](images/on-switch.png)
 
-Congratulations, you have created a piece of wearable tech!
+1. Parade around showing off your awesome piece of wearable tech!
 
-![Finished coat](images/finished.png)
+  ![Finished coat](images/finished.png)
+
 ## What next?
 
 Congratulations, you have created your first wearable piece of clothing.
