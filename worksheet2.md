@@ -14,12 +14,13 @@ To make your first wearable item, make sure you have the following items of kit:
 - Battery pack and batteries
 - Scissors
 - Clear nail varnish (optional)
+- Normal cotton (optional)
 
 You will also need an item of clothing of your choice.
 
 ![Green jacket](images/jacket.png)
 
-## Sewing the circuit
+## Sewing the ground circuit
 
 1. First, plan out where your components will go. I chose this jacket because it has a pocket where I can store the battery pack, and a lapel for me to sew the NeoPixel onto. Most of the thread circuit can also be hidden by stitching under the lapel.
 
@@ -33,12 +34,46 @@ You will also need an item of clothing of your choice.
 
   ![Sewing to GND on FLORA](images/sew-ground-1.png)
 
-1. With your needle on the back of the fabric, use the remaining thread and the 5-10cm you left earlier to tie the ends together in a secure knot. Adafruit recommend using a small blob of clear nail varnish to secure the knot from becoming undone. When the knot is secure, cut off the tail end very short as you don't want it to accidentally touch one of the other threads and cause a short circuit. Don't cut the end that is still threaded into the needle!
+1. With your needle on the back of the fabric, use the remaining thread and the 5-10cm you left earlier to tie the ends together in a secure knot. If you have some, use a small blob of clear nail varnish to secure the knot from becoming undone. When the knot is secure, cut off the tail end very short as you don't want it to accidentally touch one of the other threads and cause a short circuit. Don't cut the end that is still threaded into the needle!
 
 1. Using the still threaded part, stitch towards the location you want to place your NeoPixel using a running stitch.
 
     ![Running stitch](images/sew-ground-2.png)
 
-1. When you reach the location, sew from the back of the fabric through the **negative** connector on the NeoPixel just as you did on the FLORA, repeating 2-3 times to make a secure connection. When you have finished, use an existing stitch to help you tie a secure knot and then seal the knot and cut the ends short as before.
+1. When you reach the location, sew from the back of the fabric through the **negative** connector on the NeoPixel, over the connector pad and back through the material, just as you did on the FLORA, repeating 2-3 times to make a secure connection.
 
-  ![Green jacket](images/sew-ground-3.png)
+1. When you have finished, use an existing stitch to help you tie a secure knot and then seal the knot and cut the ends short as before.
+
+  ![Green jacket](images/tie-knot.png)
+
+1. You have just done the same job as your crocodile clip did before - connecting the GND pad on the FLORA to the negative connector on the NeoPixel.
+
+## Connect the power and pin
+
+1. Now you need to repeat this process twice more:
+
+ - stitch `VBATT` on the FLORA to the `+` connector on the NeoPixel
+ - stitch `D6` on the FLORA to the connector with an arrow pointing towards the NeoPixel
+
+ The process is exactly the same as above, except you must be careful to **ensure that the threads do not touch each other at all** or you will cause a short circuit. When you have finished sewing all three connections, the back of your material might look something like this:
+
+   ![Finished stitching](images/finished-stitching.png)
+
+1. You might feel that because we have only sewn to connectors on one side, your FLORA is not secure on the material. You can easily solve this problem by sewing through some of the connectors with **normal cotton** (NOT conductive thread) to secure it.
+
+   ![FLORA not secure](images/flappy-flora.png)
+
+1. Now connect up your battery pack to the FLORA. If your battery pack has an on/off switch, switch it on.
+
+   ![Add battery pack](images/add-battery-pack.png)
+
+1. Finally, turn on the power switch on the FLORA which is very small and can be found next to the connector labelled 3.3V, and you should see the light pattern you programmed earlier displaying on the NeoPixel.
+
+   ![On switch on the FLORA](images/on-switch.png)
+
+## What next?
+
+Congratulations, you have created your first wearable piece of clothing.
+
+- Update your program to make the NeoPixel light up in different colours, then reconnect the USB cable to your FLORA and upload the new program
+- Can you add more than one NeoPixel to your design? If you do this, you will need to sew connections to the + and - connectors on the NeoPixel as before, but this time instead of sewing from the FLORA D6 pin to the NeoPixel, sew from the outward pointing arrow of the first NeoPixel to the second NeoPixel. You will also need to update your code.
