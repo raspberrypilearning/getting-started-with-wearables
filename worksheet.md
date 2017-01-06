@@ -2,7 +2,7 @@
 
 In this resource you will learn how to create a basic piece of wearable technology using an Adafruit FLORA and a NeoPixel LED.
 
-1. Firstly you need to install the Arduino software which required to program your FLORA. Instructions for this can be found via the link on the [software](software.md) page.
+1. Firstly you need to install the Arduino software which is required to program your FLORA. Instructions for installing the software can be found via the link on the [software](software.md) page.
 
 1. Make sure you have installed the [Adafruit NeoPixel library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation#manually-install-adafruit-neopixel-library).
 
@@ -13,6 +13,8 @@ Firstly we will test whether we can upload a program successfully to the FLORA b
 1. Connect your FLORA board to the computer via the USB cable.
 
 1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the 'Serial Port' menu you will need to select the port. On Windows this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
+
+  ![Select the FLORA board](images/select-flora-board.png)
 
 1. If you look closely at the FLORA board you will see a small LED labelled "D7". Type the following code into the Arduino IDE to program this LED to blink repeatedly:
 
