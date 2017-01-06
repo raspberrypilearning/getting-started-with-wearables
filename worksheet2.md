@@ -73,9 +73,12 @@ You will also need an item of clothing of your choice.
 
    ![On switch on the FLORA](images/on-switch.png)
 
+Congratulations, you have created a piece of wearable tech!
+
+![Finished coat](images/finished.png)
 ## What next?
 
 Congratulations, you have created your first wearable piece of clothing.
 
-- Update your program to make the NeoPixel light up in different colours, then reconnect the USB cable to your FLORA and upload the new program
-- Can you add more than one NeoPixel to your design? If you do this, you will need to sew connections to the + and - connectors on the NeoPixel as before, but this time instead of sewing from the FLORA D6 pin to the NeoPixel, sew from the outward pointing arrow of the first NeoPixel to the second NeoPixel. You will also need to update your code.
+- Update your program to make the NeoPixel light up in a different colour pattern, then reconnect the USB cable to your FLORA and upload the new program.
+- Can you add more than one NeoPixel to your design? If you do this, you will need to sew connections to the + and - connectors on the NeoPixel, but this time instead of sewing from the FLORA you will sew from your previous NeoPixel. Instead of connecting the D6 pin to the NeoPixel, sew from the outward pointing arrow of the first NeoPixel to the inwards pointing arrow of the second NeoPixel. You will also need to update your code to reflect the fact you now have more than one NeoPixel.
