@@ -34,7 +34,7 @@ You will also need an item of clothing of your choice.
 
   ![Sewing to GND on FLORA](images/sew-ground-1.png)
 
-1. With your needle on the back of the fabric, use the remaining thread and the 5-10cm you left earlier to tie the ends together in a secure knot. If you have some, use a small blob of clear nail varnish to secure the knot from becoming undone. When the knot is secure, cut off the tail end very short as you don't want it to accidentally touch one of the other threads and cause a short circuit. Don't cut the end that is still threaded into the needle!
+1. With your needle on the back of the fabric, use the remaining thread and the 5-10cm you left earlier to tie the ends together in a secure knot. If you have some, use a small blob of clear nail varnish to secure the knot from coming undone. When the knot is secure, cut off the tail end very short as you don't want it to accidentally touch one of the other threads and cause a short circuit. Don't cut the end that is still threaded into the needle!
 
 1. Using the still threaded part, stitch towards the location you want to place your NeoPixel using a running stitch.
 
@@ -42,24 +42,26 @@ You will also need an item of clothing of your choice.
 
 1. When you reach the location, sew from the back of the fabric through the **negative** connector on the NeoPixel, over the connector pad and back through the material, just as you did on the FLORA, repeating 2-3 times to make a secure connection.
 
-1. When you have finished, use an existing stitch to help you tie a secure knot and then seal the knot and cut the ends short as before.
+    ![Running stitch](images/sew-ground-3.png)
+
+1. When you have finished, thread the needle around an existing stitch to help you tie a secure knot and then seal the knot and cut the ends short as before. You **must** knot and cut the thread at the end of each connection and then start afresh - do not be tempted to sew everything with one length of thread as this will not work.
 
   ![Green jacket](images/tie-knot.png)
 
 1. You have just done the same job as your crocodile clip did before - connecting the GND pad on the FLORA to the negative connector on the NeoPixel.
 
-## Connect the power and pin
+## Connect the power and D6 pin
 
 1. Now you need to repeat this process twice more:
 
- - stitch `VBATT` on the FLORA to the `+` connector on the NeoPixel
- - stitch `D6` on the FLORA to the connector with an arrow pointing towards the NeoPixel
+ - Stitch `VBATT` on the FLORA to the `+` connector on the NeoPixel
+ - Stitch `D6` on the FLORA to the connector with an arrow pointing *towards* the NeoPixel
 
- The process is exactly the same as above, except you must be careful to **ensure that the threads do not touch each other at all** or you will cause a short circuit. When you have finished sewing all three connections, the back of your material might look something like this:
+ The process is exactly the same as above, except you must be careful to **ensure that the threads do not touch each other at all** or you will cause a short circuit. When you have finished sewing all three connections, your circuit might look something like this:
 
    ![Finished stitching](images/finished-stitching.png)
 
-1. You might feel that because we have only sewn to connectors on one side, your FLORA is not secure on the material. You can easily solve this problem by sewing through some of the connectors with **normal cotton** (NOT conductive thread) to secure it.
+1. You might feel that because we have only sewn to connectors on one side, your FLORA is not securely fastened to the item of clothing. You can easily solve this problem by sewing through some of the connectors with **normal cotton** (don't use conductive thread) to secure it.
 
    ![FLORA not secure](images/flappy-flora.png)
 
