@@ -14,7 +14,7 @@ We will begin by testing whether we can upload a program successfully to the FLO
 
    ![Plug in USB](images/plug-in-usb.png)
 
-1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the same menu, look for the 'Serial Port' option and select the port. On Windows this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
+1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the same menu, look for the 'Serial Port' option and select the port. On Windows, this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
 
   ![Select the FLORA board](images/select-flora-board.png)
 
@@ -90,7 +90,7 @@ We are going to write some code to control the NeoPixel. This is slightly more c
   The first line specifies the pin which the NeoPixel is connected to. Remember when we put the crocodile clip on pin D6 earlier? We can refer to this pin just by the number `6` in the program. Other pins can be referred to by number in the same way.
 
   The second line sets up a "strip" of NeoPixels, with some setup information:
-  - `1` - how many NeoPixels we are controlling. Only one in this project, but if you make a project with more NeoPixels, increase this number.
+  - `1` - how many NeoPixels we are controlling. We are only using one in this project, but if you make a project with more NeoPixels, increase this number.
   - `pin` - the pin number the NeoPixels are connected to (from the variable `pin` we just set up)
   - `NEO_GRB + NEO_KHZ800` - this is config information for the NeoPixel RGB v2 we are using. You may need to change these values if you are using different versions of the NeoPixel. More information on other settings is available on the [Adafruit website](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library).
 
@@ -126,9 +126,9 @@ We are going to write some code to control the NeoPixel. This is slightly more c
 
   - `strip.setPixelColor(0, 0,0,255);` - sets the pixel colour. The first number is which NeoPixel to set to this colour. Since we only have one NeoPixel in this project, it is pixel `0`. The last three numbers are a RGB colour value, so `0, 0, 255` is blue. There are lots of websites (e.g. [Adobe Color Wheel](https://color.adobe.com)) where you can find out the RGB values of particular colours.  
   - `strip.show()` - update the colour display
-  - `delay(1000)` - wait for 1 second (1000 milliseconds)
+  - `delay(1000)` - wait for one second (1000 milliseconds)
 
-1. Click on the tick to compile the program, and if there are no errors, connect the USB cable then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue.
+1. Click on the tick to compile the program, and if there are no errors, connect the USB cable and then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue.
 
   Can you change the colour and the speed at which the NeoPixel flashes?
 
