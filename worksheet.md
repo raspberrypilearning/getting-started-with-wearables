@@ -2,7 +2,7 @@
 
 In this resource you will learn how to create a basic piece of wearable technology using an Adafruit FLORA and a NeoPixel LED.
 
-1. Firstly you need to install the Arduino software which is required to program your FLORA. Instructions for installing the software can be found via the link on the [software](software.md) page.
+1. First, you need to install the Arduino software which is required to program your FLORA. Instructions for installing the software can be found via the link on the [software](software.md) page.
 
 1. Make sure you have installed the [Adafruit NeoPixel library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation#manually-install-adafruit-neopixel-library).
 
