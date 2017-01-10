@@ -8,9 +8,9 @@ In this resource you will learn how to create a basic piece of wearable technolo
 
 ## Testing the FLORA board
 
-Firstly we will test whether we can upload a program successfully to the FLORA board, before we connect any components.
+We will begin by testing whether we can upload a program successfully to the FLORA board, before we connect any components.
 
-1. Connect your FLORA board to the computer via the USB cable. The smaller end of the cable goes into the FLORA (ours is a FLORA v1 so we used a Mini-USB cable but if you have a FLORA v2 or v3 you will need a Micro-USB cable). The large end of the USB cable should be connected to a USB port on your computer.
+1. Connect your FLORA board to the computer via the USB cable. The smaller end of the cable goes into the FLORA (ours is a FLORA v1 so we used a Mini USB cable but if you have a FLORA v2 or v3 you will need a Micro USB cable). The large end of the USB cable should be connected to a USB port on your computer.
 
    ![Plug in USB](images/plug-in-usb.png)
 
@@ -44,14 +44,14 @@ Firstly we will test whether we can upload a program successfully to the FLORA b
 1. Now click on the arrow symbol which is next to the tick symbol you pressed earlier. This will **upload** your code to the FLORA. The LEDs will blink whilst the code uploads, and When the code has finished uploading you should see the red LED constantly blinking.
 
 ## Testing the circuit
-Before sewing anything, it is a good idea to test the circuit with crocodile clips to check that the FLORA and the NeoPixel are working correctly and can be programmed. For this you will need:
+Before sewing anything, it is a good idea to test the circuit with crocodile clips to check that the FLORA and the NeoPixel are working correctly and that they can be programmed. For this you will need:
 
 - a FLORA board
 - a NeoPixel
 - three crocodile clips
 - USB cable
 
-We have chosen to use red, yellow and black crocodile clips for clarity, but the colour of the wires does not matter.
+We have chosen to use red, yellow, and black crocodile clips for clarity, but the colour of the wires does not matter.
 
 1. Before you continue, **disconnect the USB cable from your FLORA** to remove the power supply. This is important to avoid accidentally causing permanent damage to your NeoPixel.
 
