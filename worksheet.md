@@ -72,7 +72,7 @@ We have chosen to use red, yellow, and black crocodile clips for clarity, but th
 
 ## Controlling the NeoPixel with code
 
-We are going to write some code to control the NeoPixel. This is slightly more complicated than controlling the on-board LED because we need to use the NeoPixel library to communicate with the NeoPixel itself as it can do many more things than a normal LED.
+We are going to write some code to control the NeoPixel. This is slightly more complicated than controlling the on-board LED: we need to use the NeoPixel library to communicate with the NeoPixel itself as it can do many more things than a normal LED.
 
 1. In the Arduino IDE, select `File > New` to create a new program  (called a 'sketch').
 
@@ -91,8 +91,8 @@ We are going to write some code to control the NeoPixel. This is slightly more c
 
   The second line sets up a "strip" of NeoPixels, with some setup information:
   - `1` - how many NeoPixels we are controlling. We are only using one in this project, but if you make a project with more NeoPixels, increase this number.
-  - `pin` - the pin number the NeoPixels are connected to (from the variable `pin` we just set up)
-  - `NEO_GRB + NEO_KHZ800` - this is config information for the NeoPixel RGB v2 we are using. You may need to change these values if you are using different versions of the NeoPixel. More information on other settings is available on the [Adafruit website](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library).
+  - `pin` - the pin number to which the NeoPixels are connected (from the variable `pin` we just set up).
+  - `NEO_GRB + NEO_KHZ800` - this is config information for the NeoPixel RGB v2 we are using. You may need to change these values if you are using a different version of the NeoPixel. More information on other settings is available on the [Adafruit website](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library).
 
 1. Now find the **setup** method which was created for you when you opened a new sketch. Change the code so that it looks like this:
 
@@ -125,8 +125,8 @@ We are going to write some code to control the NeoPixel. This is slightly more c
   This method is called `loop()` because the code inside it will run continuously on the FLORA. Here's what this code does:
 
   - `strip.setPixelColor(0, 0,0,255);` - sets the pixel colour. The first number is which NeoPixel to set to this colour. Since we only have one NeoPixel in this project, it is pixel `0`. The last three numbers are a RGB colour value, so `0, 0, 255` is blue. There are lots of websites (e.g. [Adobe Color Wheel](https://color.adobe.com)) where you can find out the RGB values of particular colours.  
-  - `strip.show()` - update the colour display
-  - `delay(1000)` - wait for one second (1000 milliseconds)
+  - `strip.show()` - updates the colour display.
+  - `delay(1000)` - waits for one second (1000 milliseconds).
 
 1. Click on the tick to compile the program, and if there are no errors, connect the USB cable and then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue.
 
