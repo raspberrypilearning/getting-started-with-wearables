@@ -14,7 +14,7 @@ We will begin by testing whether we can upload a program successfully to the FLO
 
    ![Plug in USB](images/plug-in-usb.png)
 
-1. Open the Arduino IDE and check that on the Tools menu you have selected the board **Adafruit Flora**. On the same menu, look for the 'Serial Port' option and select the port. On Windows, this will be COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
+1. Open the Arduino IDE and check that on the Tools menu you have selected "Adafruit FLORA" as the board. On the same menu, look for the "Serial Port" option and select the port. On Windows, this will be labelled COM and then a number greater than 2 (e.g. COM3). On Mac, select a port containing the phrase "usbmodem".
 
   ![Select the FLORA board](images/select-flora-board.png)
 
@@ -39,7 +39,7 @@ We will begin by testing whether we can upload a program successfully to the FLO
 
   ![Check for errors](images/compile-program.png)
 
-1. If there were any errors, fix them and press the tick button again. Repeat this until you see "Done compiling" in green at the bottom and no error messages displayed.
+1. If there were any errors, fix them and then press the tick button again. Repeat this until you see "Done compiling" in green at the bottom and no error messages are displayed.
 
 1. Now click on the arrow symbol which is next to the tick symbol you pressed earlier. This will **upload** your code to the FLORA. The LEDs will blink whilst the code uploads, and When the code has finished uploading you should see the red LED constantly blinking.
 
@@ -87,7 +87,7 @@ We are going to write some code to control the NeoPixel. This is slightly more c
   int pin = 6;
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, pin, NEO_GRB + NEO_KHZ800);
   ```
-  The first line specifies the pin which the NeoPixel is connected to. Remember when we put the crocodile clip on pin D6 earlier? We can refer to this pin just by the number `6` in the program. Other pins can be referred to by number in the same way.
+  The first line specifies the pin to which the NeoPixel is connected. Remember when we put the crocodile clip on pin D6 earlier? We can refer to this pin just by the number `6` in the program. Other pins can be referred to by number in the same way.
 
   The second line sets up a "strip" of NeoPixels, with some setup information:
   - `1` - how many NeoPixels we are controlling. We are only using one in this project, but if you make a project with more NeoPixels, increase this number.
