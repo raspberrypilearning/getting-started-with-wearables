@@ -72,7 +72,7 @@ We have chosen to use red, yellow, and black crocodile clips for clarity, but th
 
 ## Controlling the NeoPixel with code
 
-We are going to write some code to control the NeoPixel. This is slightly more complicated than controlling the on board LED because we need to use the NeoPixel library to communicate with the NeoPixel itself as it can do many more things than a normal LED.
+We are going to write some code to control the NeoPixel. This is slightly more complicated than controlling the on-board LED because we need to use the NeoPixel library to communicate with the NeoPixel itself as it can do many more things than a normal LED.
 
 1. In the Arduino IDE, select `File > New` to create a new program  (called a 'sketch').
 
