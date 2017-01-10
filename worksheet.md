@@ -55,7 +55,7 @@ We have chosen to use red, yellow, and black crocodile clips for clarity, but th
 
 1. Before you continue, **disconnect the USB cable from your FLORA** to remove the power supply. This is important to avoid accidentally causing permanent damage to your NeoPixel.
 
-![Circuit with crocodile clips](images/crocodile-clip-circuit.png)
+   ![Circuit with crocodile clips](images/crocodile-clip-circuit.png)
 
 1. Connect a crocodile clip from GND on the FLORA to negative (-) on the NeoPixel. This provides your ground connection.
 
