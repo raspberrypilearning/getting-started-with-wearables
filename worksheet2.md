@@ -14,7 +14,7 @@ To make your first wearable item, make sure you have the following items of kit:
 - Battery pack and batteries
 - Scissors
 - Clear nail varnish (optional)
-- Normal cotton (optional)
+- Normal sewing thread (optional)
 
 You will also need an item of clothing of your choice.
 
