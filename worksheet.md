@@ -128,7 +128,7 @@ We are going to write some code to control the NeoPixel. This is slightly more c
   - `strip.show()` - updates the colour display.
   - `delay(1000)` - waits for one second (1000 milliseconds).
 
-1. Click on the tick to compile the program, and if there are no errors, connect the USB cable and then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue.
+1. Click on the tick to compile the program, and if there are no errors, connect the USB cable and then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue. The full code can be found [here](code/test_neopixel.ino).
 
   Can you change the colour and the speed at which the NeoPixel flashes?
 
