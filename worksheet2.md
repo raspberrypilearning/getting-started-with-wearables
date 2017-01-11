@@ -11,7 +11,7 @@ To make your first wearable item, make sure you have the following items of kit:
 - Adafruit NeoPixel
 - Conductive thread
 - Needle (make sure the eye is small enough to go through the holes on the NeoPixel)
-- Battery pack and batteries
+- battery pack and batteries
 - Scissors
 - Clear nail varnish (optional)
 - Normal sewing thread (optional)
@@ -65,11 +65,11 @@ You will also need an item of clothing of your choice.
 
    ![FLORA not secure](images/flappy-flora.png)
 
-1. Now connect up your battery pack to the FLORA. If your battery pack has an on/off switch, switch it on.
+1. Now connect your battery pack up to the FLORA. If your battery pack has an on/off switch, switch it on.
 
    ![Add battery pack](images/add-battery-pack.png)
 
-1. Finally, turn on the power switch on the FLORA which is very small and can be found next to the connector labelled 3.3V, and you should see the light pattern you programmed earlier displaying on the NeoPixel.
+1. Finally, turn on the power switch on the FLORA; it is very small and can be found next to the connector labelled 3.3V. You should see the light pattern you programmed earlier displaying on the NeoPixel.
 
    ![On switch on the FLORA](images/on-switch.png)
 
