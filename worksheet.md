@@ -10,7 +10,7 @@ In this resource you will learn how to create a basic piece of wearable technolo
 
 We will begin by testing whether we can upload a program successfully to the FLORA board, before we move on to connecting any components.
 
-1. Connect your FLORA board to the computer via the USB cable. The smaller end of the cable goes into the FLORA (ours is a FLORA v1 so we used a Mini USB cable, but if you have a FLORA v2 or v3 you will need a Micro USB cable). The large end of the USB cable should be connected to a USB port on your computer.
+1. Connect your FLORA board to the computer via the USB cable. The smaller end of the cable goes into the FLORA (ours is a FLORA v1 so we used a mini USB cable, but if you have a FLORA v2 or v3 you will need a micro USB cable). The large end of the USB cable should be connected to a USB port on your computer.
 
    ![Plug in USB](images/plug-in-usb.png)
 
