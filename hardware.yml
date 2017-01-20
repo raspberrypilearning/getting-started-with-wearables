@@ -2,6 +2,8 @@
   img: adafruit-flora
 - name: Adafruit NeoPixel
   img: adafruit-neopixel
+- name: Battery pack
+  img: battery-pack
 - name: Conductive thread
   img: conductive-thread
 - name: 3 x Crocodile Clips
