@@ -11,7 +11,7 @@ To make your first wearable item, make sure you have the following items of kit:
 - Adafruit NeoPixel
 - Conductive thread
 - Needle (make sure the eye is small enough to go through the holes on the NeoPixel)
-- battery pack and batteries
+- Battery pack and batteries
 - Scissors
 - Clear nail varnish (optional)
 - Normal sewing thread (optional)
