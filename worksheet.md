@@ -4,7 +4,15 @@ In this resource you will learn how to create a basic piece of wearable technolo
 
 1. First, you need to install the Arduino software which is required to program your FLORA. Instructions for installing the software can be found via the link on the [software](software.md) page.
 
-1. Make sure you have installed the [Adafruit NeoPixel library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation#manually-install-adafruit-neopixel-library).
+1. Download the Adafruit NeoPixel library by clicking the green button [on the Adafruit NeoPixel page](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation#manually-install-adafruit-neopixel-library).
+
+1. Unzip the NeoPixel library into a folder.
+
+1. Rename the unzipped folder to `Adafruit_NeoPixel`, being careful to get the capitalisation exactly correct.
+
+1. Locate the folder where you installed the Arduino IDE. Copy and paste the whole `Adafruit_NeoPixel` folder into the `libraries` subfolder. For example, we used Windows to create this tutorial and our libraries folder looked like this:
+
+   ![Install library](images/install-library.png)
 
 ## Testing the FLORA board
 
@@ -18,7 +26,11 @@ We will begin by testing whether we can upload a program successfully to the FLO
 
   ![Select the FLORA board](images/select-flora-board.png)
 
-1. If you look closely at the FLORA board you will see a small LED labelled "D7". Type the following code into the Arduino IDE to program this LED to blink repeatedly:
+1. If you look closely at the FLORA board you will see a tiny LED labelled "D7".
+
+  ![D7 LED](images/d7-led.png)
+
+  Keep the code that is automatically inserted and add the following code into the Arduino IDE to program this LED to blink repeatedly:
 
   ```cpp
   int led = 7;
