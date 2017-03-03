@@ -2,7 +2,33 @@
 
 In this resource you will learn how to create a basic piece of wearable technology using an Adafruit FLORA and a NeoPixel LED.
 
-1. First, you need to install the Arduino software which is required to program your FLORA. Instructions for installing the software can be found via the link on the [software](software.md) page.
+1. Download the Arduino IDE from the [Latest Arduino IDE link](https://learn.adafruit.com/adafruit-arduino-ide-setup/arduino-1-dot-6-x-ide) on the Adafruit website.
+
+1. Run the Arduino IDE and click `File` > `Preferences` (or `Arduino` > `Preferences` on Mac OSX)
+
+1. A box will pop up. Paste this line into the box labelled "Additional Boards Manager URLs" then click `OK`
+
+  ```bash
+  https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+  ```
+
+  ![Set up board manager](images/board-manager.png)
+
+1. Now go to `Tools` > `Boards` > `Board manager`
+
+  ![Board manager menu](images/board-manager-menu.png)
+
+1. Change the drop down on the top left to `Contributed`
+
+  ![Contributed](images/contributed.png)
+
+1. Click on the category entitled **Adafruit AVR boards** and then click the `Install` button.
+
+  ![AVR boards](images/adafruit-avr-boards.png)
+
+1. Close the Arduino IDE and then reopen it.
+
+1. Finish the setup for the operating system you are using - [Windows](https://learn.adafruit.com/adafruit-arduino-ide-setup/windows-setup), [Mac OSX](https://learn.adafruit.com/adafruit-arduino-ide-setup/mac-osx-setup) or [Linux](https://learn.adafruit.com/adafruit-arduino-ide-setup/linux-setup)
 
 1. Download the Adafruit NeoPixel library by clicking the green button [on the Adafruit NeoPixel page](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation#manually-install-adafruit-neopixel-library).
 
