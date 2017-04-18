@@ -77,7 +77,7 @@ We will begin by testing whether we can upload a program successfully to the FLO
 
   ![Check for errors](images/compile-program.png)
 
-1. If there were any errors, fix them and then press the tick button again. Repeat this until you see "Done compiling" in green at the bottom and no error messages are displayed.
+1. If there were any errors, fix them and then press the tick button again. Repeat this until you see "Done compiling" in green at the bottom and no error messages are displayed. You will be asked to type a filename and save your program.
 
 1. Now click on the arrow symbol which is next to the tick symbol you pressed earlier. This will **upload** your code to the FLORA. The LEDs will blink whilst the code uploads, and When the code has finished uploading you should see the red LED constantly blinking.
 
@@ -166,7 +166,7 @@ We are going to write some code to control the NeoPixel. This is slightly more c
   - `strip.show()` - updates the colour display.
   - `delay(1000)` - waits for one second (1000 milliseconds).
 
-1. Click on the tick to compile the program, and if there are no errors, connect the USB cable and then click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue. The full code can be found [here](https://raw.githubusercontent.com/raspberrypilearning/getting-started-with-wearables/master/code/test_neopixel.ino).
+1. Click on the tick to compile the program, and if there are no errors, click on the arrow to upload it to your FLORA. You should see the NeoPixel flash on and off in blue. The full code can be found [here](https://raw.githubusercontent.com/raspberrypilearning/getting-started-with-wearables/master/code/test_neopixel.ino).
 
   Can you change the colour and the speed at which the NeoPixel flashes?
 
