@@ -1,0 +1,27 @@
+---
+title: Getting started with wearables
+hero_image: images/banner.png
+description: In this resource you will learn how to create a basic piece of wearable
+  technology
+original_url: https://raspberrypi.org/learning/getting-started-with-wearables
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Getting started with wearables
+- title: Testing the FLORA board
+- title: Testing the circuit
+- title: Controlling the NeoPixel with code
+- title: Getting started with wearables (Part 2)
+- title: Sewing the ground connection
+- title: Connect the power and D6 pin
+- title: What next?
+
