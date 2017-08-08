@@ -18,6 +18,7 @@ steps:
 - title: Testing the FLORA board
 - title: Testing the circuit
 - title: Controlling the NeoPixel with code
+- title: Sewing it all up
 - title: Sewing the ground connection
 - title: Connect the power and D6 pin
 - title: What next?
