@@ -6,7 +6,7 @@ description: In this resource you will learn how to create a basic piece of wear
 original_url: https://raspberrypi.org/learning/getting-started-with-wearables
 theme: red
 duration: 2
-listed: true
+listed: false
 ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-1, phys-comp-1, manufacture-2, community-0
